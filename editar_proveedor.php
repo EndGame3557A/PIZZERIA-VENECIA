@@ -28,7 +28,7 @@
 
   <header class="header2edi">
 			<div class="regresar-edi">
-				<a href="admin (1).html"><img src="img/REGRESAR.png" alt="REGRESAR"></a>
+				<a href="admin (1).html"><img src="REGRESAR.png" alt="REGRESAR"></a>
 			</div>
 		</header>
 
