@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>REGISTRO VENECIA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/venecia-negro.jpg">
+    
+</head>
+<header class="headernav">
+    <img class="VENECIA2" src="img/venecia-negro.jpg" alt="logo">
+    <a href="bienvenido.html" class="logoj">Pizzeria Venecia</a>
+    <!-- El botón del menú hamburguesa -->
+<button id="abrir" class="abrir-menu hamburger">
+<span></span>
+<span></span>
+<span></span>
+</button>
+
+<!-- El menú hamburguesa -->
+<nav class="nav" id="nav">
+<button class="cerrar-menu" id="cerrar">.</button>
+<ul class="nav-list">
+<li><a href="quienes_somos.html">Quienes somos</a></li>
+<li><a href="productos.html">Productos</a></li>
+<li><a href="redes-sociales.html">Contactanos</a></li>
+<li><a href="login.html">Iniciar Sesión</a></li>
+</ul>
+</nav>
+</header>
+<body class="login-body">
+    <div class="container-form register">
+        <div class="information">
+            <div class="info-childs">
+                <img class="VENECIA" src="img/venecia-negro.jpg" alt="logo">
+                <h2>BIENVENIDO</h2>
+                <p>Para unirte a nuestra comunidad por favor inicia sesion con tus datos</p>
+                <input type="button" value="Iniciar Sesión" id="sign-in">
+            </div>
+        </div> 
+        <div class="form-information">
+            <div class="form-information-childs">
+                <h2>Crear Una Cuenta</h2>
+                <div class="icons">
+                    <a href="https://www.google.com/" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAAAXNSR0IArs4c6QAAAuFJREFUWEftl1mojVEUx3+XJCFSXIlMD8ZcQ+EByZMylClkyE2RlBClJGNKkQcPSBRKhkgpQxkSSiEihTKkUIRERKb9r018Z3/fXvt0bp2Hu+q+3G8Nv7322mutU0MVSk0VMtEIZb2VSmSqDVALtAc+AK+At1aAkF45ULIZB0wBxgIdA47fA6eAI8AZ4FcKZCrUBGAz0D8hyBNgC7AX+GGxs0I1Bw4Bky1Oc3Sue3tdb6FYoDoAZ4FBMWeG79uAFTG9GFQLVzc64YCYI8P3A8A8S33FoI4BUwsCfgceAw+Ah0BnoK8/RJN/7Pa4V7nQAiSbIqiZvo7ymC46mBnAm4BCa2C+g1jrfSw2ZPKvSh5UU+AR0CPgTM97g//7GQmm3hWCLqvQx/s+EzJe7/65LuXkqbp5mdoH1Aec3XWwQwDVUoNJCEpX9xpol4n6DajzRd1gQHmF3tU93WeBqOf8WMkDGglsTKS9AyzN2oQyNRi4FXC+C1hUEFTd/ngi1AvfRv4zC0GNAS4EnK/yMywv7iTXn04kQqk2m1kyNcx38azuDmBJhTOlVaetBUq9SV06K1eAURWGUi/sZYFqBXwMBP8EqFPnSR9gesF3DeKWme+XgdEWKOnc9zMsq78A0BxLle6A9qqsbAeWW6FWA5sCTr4AA/0ISgHb76DmBgz0qC5ZobRDqVdpdcnKPUBj6LmRaprL+tGA7jtAcUq20aItQUN3TU7gz35Z21kApvrT1WhTCMVZCWwN2RdBKUvXIhunmuxp4KrX7eJ3KRXvHBdUjyYkT4HegEZXicSWvE7AbZ9m421F1b4CI1wJ3MzTjEHJbrj/mVTS5KLhwwpaHg8X2VqgZN/Ngynl5YoKenYMSM6tUNJV4apNaCiXzKsIqVahWe7azltOlAL1x5+KeRkwEegZCXID2O30DuYVdTmFHjuYRstQoJ9/dRpFL/0vm5OAVpNkKSdTyUFSDRqhrBmrykz9Bib8dCbxrtYuAAAAAElFTkSuQmCC"/></a>
+                    <a href="https://github.com/" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAAAXNSR0IArs4c6QAAA8NJREFUWEftmFmoTVEYx3+GUDJkyJh5yBAeKDOlEJIyT0VmkgeEvFAiYxRFKLPMyRxJphApUobMmXlAZmH9b+vclnXXPmfve8/DTb46D3vtb33rv7/xv04RCqEUKYSY+OdAVQcGA3WBSvb3FXgLvAQuA0eBH0mjkdRTRYHRwFigbYzDPgK7gCXAvRj6OSpJQHUA1ptDmsQ17ujJW2vM8zzgfab9cUCVBFYBEzIZi/FeYe0PXEynmwlULeAg0CrGgXFVfgGzgGVRG9KBKgtcBRrGPS2h3jhgQ2hPFKhiwAmgm7PpPKBfX6BpAgDKp0MmbDdNJc4Fitu98lgP4JRvKwrUNGClpzwA2GfXBGwdUNU+vwEeAuWA2kApu34AmGxbhJbOGRAdHbvKMbUUtZJcCYEqbQ+o7IFqDtxy1ioaYNWA+yZHvng2tV4FuO7ZULjGeGvTgRWZQM0BFgbC08KGIEHk8qhuM/1quLeqZivvfk6thzx1B2gUOHmIbYQFAXUFaBMwoDaxPwpUY+B2YNM1oD3wvSCIgC7AmYCNzcCoKFAzgKWBTb2AYwUElNquanOrWuvvTMdXDv/Wgx8+VdR473CVdBngW5ZAzbSz0Den4lA15gGl7q1yd+UxUCdLgGRG+bM3YE8DXswiD6gLNnfcPU9sdWQLVz9A/cuXgSmwfvhC8VZyayhnSzTY1waMCawilcdTO031qfR9qQ88yBKq1cCUgK12wKUQKDVNNU9flPziUtkQkb0GAUOaAK9DoJTkOS70RMkutpCY2np2FAVFwxeNqlygfk5pnqnth2SjpcH59ZYYq1hGhYCBv2yHxsxhoLfd+Bz45HCqI8AkM1SfJkAmGqQLhuhw+Yh9nS2DyHkdAtXT6d5ytfKpK7DHUhLxoNOARo9Yw9aI/BB49Td175ppPuKGaREt3fdRfOos0Mkqyjt9DDlbYEmau787cDLiwOOWxGVyqpwgQpkrUaA0mPUFJazmMMM2d5txs9yMgom2bz2zyfkXQXNsR40T9/ztwAgfdTqOLuVUaASgXkKWEFVpKQyix2KhH5KAku5s45VFThhFL6Kq07c9KA3/emRCpmaZM4CTgpK+gIjGqopEe3XDUbKLh6e7JQ81ZHFH4EzNV42UyI/LdO9L2WxtKmmTqcBmziGvnItD6INHmpBvcV6o8S42FT8f+Jku++OCkg15aiogIljD3JhfAPqTI0pUHEpkiaiuxtfddGBS75KASu3RvU2cSERf97ko0XVLF06Nrdh/bshYfkDF+dgC6fwHFdd9fwB906MmHD/SaAAAAABJRU5ErkJggg=="/></a>
+                    <a href="https://www.linkedin.com" target="_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAAAXNSR0IArs4c6QAAAfZJREFUWEft2M+rTWEUxvHPTVIiJhgQKQoZIAwYKWFAlIEYSJKkMDD2JyhMZCCZoShihCgMDPxKKDEgSSYYo+xV52rf3drn7Drte+9gr+E67/uu7/vs9T7v3mfEJIyRScikg2r6VPoptQ8b8BNX8brposOOq4O6gj2Vxfci8q1HBnUAl5LKXzG/dSLSRr+IgzXFV+Nl22CZUmdwoqbwUnyYCKiNeJwUvostbQPF+nWNfhinMaMH8QD78WUioaL2NKzDr/G0g35KjYcgtTWyxzcd65MZP/CqlF+CBcm4J/iNqRg14IU9xT8iWuEh/tRRZVDL8TaZcL84AJtL+bM4noybizil1/r42qeiPw/hXgbWBtQuXMeUAT3wF1sRmx0TbUB9RjyuJvECa8YDqglMecxKvCkn2lBqdP3beFb01gpsK3xvZg1t3B7nBkHFImPIexOqjR4LHaspdAQXSr/NxnMsTsafx9FBUMuK15Z3DU5f3R15B9uT+XFS48RW4xZ2DoIa1hJi17H7aoT3PU3y4Vmb2obageinaoR3vU/y0XdrB0EN21PhUzeT4vPwLcnHLbGqbajduJEUn1M09PcOqqRAp1RT8+yU6pSqWsei4uK8XOO8J0v5uIyjf6pxCo+S/KwaU43vyHgL/R/dX0GJemmqU6qpUv8A1/mKJpXLvF4AAAAASUVORK5CYII="/></a>
+                </div>
+                <p>o usa tu email para registrarte</p>
+                <form class="form" method="$_POST" action="login.html">
+                    <label for="name">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAAAXNSR0IArs4c6QAAAwlJREFUWEftl1moTlEUx3+XFDKWN6HILMMTikR4QYZSMpVS5BZliuRFyvQgMpQnZSqZnpRQyhAeEAmZEg9EMj0gYf9rndvuu+ecvc93z8eXrLp161t7rd9Ze+21/7uBOrSGOmTin4TqAUwEBgEDgXfAfeAOcL7aXWhJpRYDO4EOGckvAvOB10XhqoHSmpPAzIhkH4FpwOUI3yaXaqDWANu9JNeBo8BToCswHFgBtDGfV8Bg4FMsWFEo9Y76JUm4FdgA/KxI2N96Sj0nOwgsqhXUHqDRgl8CxuckmgCorxJTFT/EgBWt1DVgtAWeBZwOJNFJVHVlOqU+ZObSIlCtgC9AO4vWD3gcgDoGzDGftcCOsislqM+uydtb4AHAo0CS425uzTafde6DtpUNpXj+9s2zU5eX5wXQ0xwmARdqAbXfDcOlFlgjYAjwNSPRcjcidnm/dQE0t4JWpKcUTPPmtjcSdJUsAN5UZNK03+313yFgYZDGHIpCaZka1u8NHXMNT52svm6OzQBGeQA1H57KpQ85AWgkhEzbNdWNgyshR//3aiqVrNeE1hbVxYXsf1QiXSRb1G9v/7Z0KbIjhXyLbl9b19BjrZH7AN29k1iZ+D3wErgH6J58EksWC9XRXTGrnfxYmdNDoZxX3Y2wCrgRcoyB6mXHXZVpqf1yw1bXja/HmsUMQUkX6Th381ZKOz2zhn4AfMsg1daq+fXXqcJHp1ZCMNXyoDoDt4De3krdfXOdYNOdFmvKIYAtgHoysSXAgbQgeVBHDCBZt97KXqkyY+GkKqTtE331HRiapjSyoEYC0t6J7fMUZyxEmp/686FXsbPAlErHLChfB4XUQFHIZcBeb5Ha47kfJA2qtYm5RGFqDOh9V5ZJLOoS15iRNYufBqUTpxInpq28WRaRxTnnBONk+/+wyZ+mFGlQ42wCy0kCTl/0o2SojcAmiynJo0dFLtR096A8Yx533YtlWMlACqfX9SmLq3fkiBDUGGCzOem+koos23JzhCZ62TBR8f5DRZXJ9Has7x/z+w1YQX4mDQeIOAAAAABJRU5ErkJggg=="/>
+                        <input type="text" placeholder="Nombres Completos" name="name" id="name">
+                    </label>
+                    <label for="user">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAAAXNSR0IArs4c6QAAAnhJREFUWEftmDtoVUEQhr8oGIwGISAIIaiIRRBBLSxsNBCLYOETfFRqFEQkjQiiFpFUKQWDhRJUUBRfhfggVbRQEBu1CFqojagIErAwQRT3hz0wLPfk7N57LiRwtrmwZ/6Zf2dn/jnntjALV8ss5ERFKvZWqkw1kqlVwEmgG5pec7+Ax8AlSzi8PhF5BSyOPVVJdiPAicxXSOoOsKekQKludEMfBQpJfQBWe2/XgM+pnhPtDwLLPWY/cKsWKZHIjK4Ax4C/iYFizTcAT4GlHnAIuFpESs9fADuAH7GRIu0OAKNAq7GPJiXMN2C7b4DImLlmC4CLwNEaFkmkhP8DnAIuNMCqE3gIrM/xEUXqBrAPmG+c3AYE/p1Ibqsv4g6Dew0s8nqo7VxSn1yxrfDALT74fUCnzNYEsA2Qbcw657r8PDDPGOsKJdBjwOaiQg9JPQN0OmWo1ziVEu8FnszAqt3j+gLcYeCu3xuPIWUloQcQSEt6dtpd5VBwncPAGeBfQE6T4RGw0uy/8w1jM9wQqcz3JuAesMwEUzZ3AT/9nibCdWChsZHmaYxMB+RLISWfEjuNo6wWtPcF2OkmgBT6uAmshjgC3My55tJIyb+KdtBJxdmggG1sNcRuV3v6zVulksqCqPjVBLbV9UyZUYaKpKMppERAciHZ2OiaYcrV1oDbuxyjFb6RCiUhr/uKYug6JREvE98smpapIsIzPa9IxWZv7mbqrVPstf6Yb4DJ2CPXabcOWOKxmgoPsplm/emrwipynbGSYXpf6wK+1yIlEXzuxsiaZLf1AzTM+7P381qktNfmhbD+MGnIr8B7C6n+S4hNYJWpOZ2p/w3njSZGpqkzAAAAAElFTkSuQmCC"/>
+                        <input type="text" placeholder="Usuario" name="user" id="user">
+                    </label>
+                    <label for="pass">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAAAXNSR0IArs4c6QAAAlZJREFUWEft2EuojVEUwPHfpVBSFCmUYkASJQMm5FEYICPyGEimKBmTmUd5DIwkAyImouQRSSmlPAbIBGVA3ilJIt+qffTd03e+c75zz3Fv3DU6tfde63/WWnvttb4eA1B6BiCTfxJqChZhBqbhI57gIa7hVzuRaNdTQ3Egg9iG+F0kAbcej6qCtQMVEFewtAVjX7EMd1rY+2dLO1CHsCNn5DaO4gOGYDF2YkTa8xqz8L5VsKpQc3Evp3wvdhcYm4pbmJTWTmBLt6DOYF1SfgmrSgyFx26k9Z8Ym3n4cytgVT31BaOS4iW42cTIU0xPe9Zmt/Rcp6EiR77llI7H2yZGTmFD2hNhjnA3lSqeGo1POY1jWgjH4ezM9nTmSN0FaQg3CNUpT0UyH0x1JmpQJyRS4GyqZfkcbal4zs6u/P1UEDsBU6/jNDYWKS7LqeNVCl6b1OOKKn0ZVNSg6ABC9qX3rk3bvY5F6KKchCzMnqV4pnpJGVQ8E3EoZDNOdoIILzE56Yo/HXYGoYqc+/96Kl7/Y1ie3dZXmWv24HxJ/nXdU1FQo5ZFTctLdKW1tqWer+tQ+Z4pbzyAGrXLXYdagcsFobqL+Q1C2HWo4XiOCXUAW7NWOF6Efrt989KMV+tIo7Hb1J+JXrMdw2ct2dfgwiBUAw/8NU9dxMoE8QxvSkIS8+DItP64yeAZORgXJGQOHlR5kHdhfwlIX5feYSJ+VIEahuvZbLegr9YLzn/PPLQ6q2VXi3Q3m2biY0ZMwTNLvq5UZY7PRTFdv2h0sBlUVYMd2T8goX4DMwGQJsuJwNkAAAAASUVORK5CYII="/>
+                        <input type="text" placeholder="Contraseña" name="pass" id="pass">
+                    </label>
+                    <input type="button" value="Registrar">
+                </form>
+            </div>
+        </div>      
+    </div>
+    <div class="container-form login hide">
+        <div class="information">
+            <div class="info-childs">
+                <img class="VENECIA" src="img/venecia-negro.jpg" alt="logo">
+                <h2>BIENVENIDO NUEVAMENTE</h2>
+                <p>Para unirte a nuestra comunidad por favor inicia sesion con tus datos</p>
+                <input type="button" value="Registrarse" id="sign-up">
+            </div>
+        </div>
+        <div class="form-information">
+            <div class="form-information-childs">
+                <h2>Iniciar Sesión</h2>
+                <div class="icons">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAAAXNSR0IArs4c6QAAAuFJREFUWEftl1mojVEUx3+XJCFSXIlMD8ZcQ+EByZMylClkyE2RlBClJGNKkQcPSBRKhkgpQxkSSiEihTKkUIRERKb9r018Z3/fXvt0bp2Hu+q+3G8Nv7322mutU0MVSk0VMtEIZb2VSmSqDVALtAc+AK+At1aAkF45ULIZB0wBxgIdA47fA6eAI8AZ4FcKZCrUBGAz0D8hyBNgC7AX+GGxs0I1Bw4Bky1Oc3Sue3tdb6FYoDoAZ4FBMWeG79uAFTG9GFQLVzc64YCYI8P3A8A8S33FoI4BUwsCfgceAw+Ah0BnoK8/RJN/7Pa4V7nQAiSbIqiZvo7ymC46mBnAm4BCa2C+g1jrfSw2ZPKvSh5UU+AR0CPgTM97g//7GQmm3hWCLqvQx/s+EzJe7/65LuXkqbp5mdoH1Aec3XWwQwDVUoNJCEpX9xpol4n6DajzRd1gQHmF3tU93WeBqOf8WMkDGglsTKS9AyzN2oQyNRi4FXC+C1hUEFTd/ngi1AvfRv4zC0GNAS4EnK/yMywv7iTXn04kQqk2m1kyNcx38azuDmBJhTOlVaetBUq9SV06K1eAURWGUi/sZYFqBXwMBP8EqFPnSR9gesF3DeKWme+XgdEWKOnc9zMsq78A0BxLle6A9qqsbAeWW6FWA5sCTr4AA/0ISgHb76DmBgz0qC5ZobRDqVdpdcnKPUBj6LmRaprL+tGA7jtAcUq20aItQUN3TU7gz35Z21kApvrT1WhTCMVZCWwN2RdBKUvXIhunmuxp4KrX7eJ3KRXvHBdUjyYkT4HegEZXicSWvE7AbZ9m421F1b4CI1wJ3MzTjEHJbrj/mVTS5KLhwwpaHg8X2VqgZN/Ngynl5YoKenYMSM6tUNJV4apNaCiXzKsIqVahWe7azltOlAL1x5+KeRkwEegZCXID2O30DuYVdTmFHjuYRstQoJ9/dRpFL/0vm5OAVpNkKSdTyUFSDRqhrBmrykz9Bib8dCbxrtYuAAAAAElFTkSuQmCC"/>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAAAXNSR0IArs4c6QAAA8NJREFUWEftmFmoTVEYx3+GUDJkyJh5yBAeKDOlEJIyT0VmkgeEvFAiYxRFKLPMyRxJphApUobMmXlAZmH9b+vclnXXPmfve8/DTb46D3vtb33rv7/xv04RCqEUKYSY+OdAVQcGA3WBSvb3FXgLvAQuA0eBH0mjkdRTRYHRwFigbYzDPgK7gCXAvRj6OSpJQHUA1ptDmsQ17ujJW2vM8zzgfab9cUCVBFYBEzIZi/FeYe0PXEynmwlULeAg0CrGgXFVfgGzgGVRG9KBKgtcBRrGPS2h3jhgQ2hPFKhiwAmgm7PpPKBfX6BpAgDKp0MmbDdNJc4Fitu98lgP4JRvKwrUNGClpzwA2GfXBGwdUNU+vwEeAuWA2kApu34AmGxbhJbOGRAdHbvKMbUUtZJcCYEqbQ+o7IFqDtxy1ioaYNWA+yZHvng2tV4FuO7ZULjGeGvTgRWZQM0BFgbC08KGIEHk8qhuM/1quLeqZivvfk6thzx1B2gUOHmIbYQFAXUFaBMwoDaxPwpUY+B2YNM1oD3wvSCIgC7AmYCNzcCoKFAzgKWBTb2AYwUElNquanOrWuvvTMdXDv/Wgx8+VdR473CVdBngW5ZAzbSz0Den4lA15gGl7q1yd+UxUCdLgGRG+bM3YE8DXswiD6gLNnfcPU9sdWQLVz9A/cuXgSmwfvhC8VZyayhnSzTY1waMCawilcdTO031qfR9qQ88yBKq1cCUgK12wKUQKDVNNU9flPziUtkQkb0GAUOaAK9DoJTkOS70RMkutpCY2np2FAVFwxeNqlygfk5pnqnth2SjpcH59ZYYq1hGhYCBv2yHxsxhoLfd+Bz45HCqI8AkM1SfJkAmGqQLhuhw+Yh9nS2DyHkdAtXT6d5ytfKpK7DHUhLxoNOARo9Yw9aI/BB49Td175ppPuKGaREt3fdRfOos0Mkqyjt9DDlbYEmau787cDLiwOOWxGVyqpwgQpkrUaA0mPUFJazmMMM2d5txs9yMgom2bz2zyfkXQXNsR40T9/ztwAgfdTqOLuVUaASgXkKWEFVpKQyix2KhH5KAku5s45VFThhFL6Kq07c9KA3/emRCpmaZM4CTgpK+gIjGqopEe3XDUbKLh6e7JQ81ZHFH4EzNV42UyI/LdO9L2WxtKmmTqcBmziGvnItD6INHmpBvcV6o8S42FT8f+Jku++OCkg15aiogIljD3JhfAPqTI0pUHEpkiaiuxtfddGBS75KASu3RvU2cSERf97ko0XVLF06Nrdh/bshYfkDF+dgC6fwHFdd9fwB906MmHD/SaAAAAABJRU5ErkJggg=="/>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAAAXNSR0IArs4c6QAAAfZJREFUWEft2M+rTWEUxvHPTVIiJhgQKQoZIAwYKWFAlIEYSJKkMDD2JyhMZCCZoShihCgMDPxKKDEgSSYYo+xV52rf3drn7Drte+9gr+E67/uu7/vs9T7v3mfEJIyRScikg2r6VPoptQ8b8BNX8brposOOq4O6gj2Vxfci8q1HBnUAl5LKXzG/dSLSRr+IgzXFV+Nl22CZUmdwoqbwUnyYCKiNeJwUvostbQPF+nWNfhinMaMH8QD78WUioaL2NKzDr/G0g35KjYcgtTWyxzcd65MZP/CqlF+CBcm4J/iNqRg14IU9xT8iWuEh/tRRZVDL8TaZcL84AJtL+bM4noybizil1/r42qeiPw/hXgbWBtQuXMeUAT3wF1sRmx0TbUB9RjyuJvECa8YDqglMecxKvCkn2lBqdP3beFb01gpsK3xvZg1t3B7nBkHFImPIexOqjR4LHaspdAQXSr/NxnMsTsafx9FBUMuK15Z3DU5f3R15B9uT+XFS48RW4xZ2DoIa1hJi17H7aoT3PU3y4Vmb2obageinaoR3vU/y0XdrB0EN21PhUzeT4vPwLcnHLbGqbajduJEUn1M09PcOqqRAp1RT8+yU6pSqWsei4uK8XOO8J0v5uIyjf6pxCo+S/KwaU43vyHgL/R/dX0GJemmqU6qpUv8A1/mKJpXLvF4AAAAASUVORK5CYII="/>
+                </div>
+                <p>¡También puedes iniciar sesión con tu cuenta!</p>
+                <form class="form">
+                    <label>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAAAXNSR0IArs4c6QAAAnhJREFUWEftmDtoVUEQhr8oGIwGISAIIaiIRRBBLSxsNBCLYOETfFRqFEQkjQiiFpFUKQWDhRJUUBRfhfggVbRQEBu1CFqojagIErAwQRT3hz0wLPfk7N57LiRwtrmwZ/6Zf2dn/jnntjALV8ss5ERFKvZWqkw1kqlVwEmgG5pec7+Ax8AlSzi8PhF5BSyOPVVJdiPAicxXSOoOsKekQKludEMfBQpJfQBWe2/XgM+pnhPtDwLLPWY/cKsWKZHIjK4Ax4C/iYFizTcAT4GlHnAIuFpESs9fADuAH7GRIu0OAKNAq7GPJiXMN2C7b4DImLlmC4CLwNEaFkmkhP8DnAIuNMCqE3gIrM/xEUXqBrAPmG+c3AYE/p1Ibqsv4g6Dew0s8nqo7VxSn1yxrfDALT74fUCnzNYEsA2Qbcw657r8PDDPGOsKJdBjwOaiQg9JPQN0OmWo1ziVEu8FnszAqt3j+gLcYeCu3xuPIWUloQcQSEt6dtpd5VBwncPAGeBfQE6T4RGw0uy/8w1jM9wQqcz3JuAesMwEUzZ3AT/9nibCdWChsZHmaYxMB+RLISWfEjuNo6wWtPcF2OkmgBT6uAmshjgC3My55tJIyb+KdtBJxdmggG1sNcRuV3v6zVulksqCqPjVBLbV9UyZUYaKpKMppERAciHZ2OiaYcrV1oDbuxyjFb6RCiUhr/uKYug6JREvE98smpapIsIzPa9IxWZv7mbqrVPstf6Yb4DJ2CPXabcOWOKxmgoPsplm/emrwipynbGSYXpf6wK+1yIlEXzuxsiaZLf1AzTM+7P381qktNfmhbD+MGnIr8B7C6n+S4hNYJWpOZ2p/w3njSZGpqkzAAAAAElFTkSuQmCC"/>
+                        <input type="username" id="username" name="username" placeholder="Usuario">
+                    </label>
+                    <label>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAAAXNSR0IArs4c6QAAAlZJREFUWEft2EuojVEUwPHfpVBSFCmUYkASJQMm5FEYICPyGEimKBmTmUd5DIwkAyImouQRSSmlPAbIBGVA3ilJIt+qffTd03e+c75zz3Fv3DU6tfde63/WWnvttb4eA1B6BiCTfxJqChZhBqbhI57gIa7hVzuRaNdTQ3Egg9iG+F0kAbcej6qCtQMVEFewtAVjX7EMd1rY+2dLO1CHsCNn5DaO4gOGYDF2YkTa8xqz8L5VsKpQc3Evp3wvdhcYm4pbmJTWTmBLt6DOYF1SfgmrSgyFx26k9Z8Ym3n4cytgVT31BaOS4iW42cTIU0xPe9Zmt/Rcp6EiR77llI7H2yZGTmFD2hNhjnA3lSqeGo1POY1jWgjH4ezM9nTmSN0FaQg3CNUpT0UyH0x1JmpQJyRS4GyqZfkcbal4zs6u/P1UEDsBU6/jNDYWKS7LqeNVCl6b1OOKKn0ZVNSg6ABC9qX3rk3bvY5F6KKchCzMnqV4pnpJGVQ8E3EoZDNOdoIILzE56Yo/HXYGoYqc+/96Kl7/Y1ie3dZXmWv24HxJ/nXdU1FQo5ZFTctLdKW1tqWer+tQ+Z4pbzyAGrXLXYdagcsFobqL+Q1C2HWo4XiOCXUAW7NWOF6Efrt989KMV+tIo7Hb1J+JXrMdw2ct2dfgwiBUAw/8NU9dxMoE8QxvSkIS8+DItP64yeAZORgXJGQOHlR5kHdhfwlIX5feYSJ+VIEahuvZbLegr9YLzn/PPLQ6q2VXi3Q3m2biY0ZMwTNLvq5UZY7PRTFdv2h0sBlUVYMd2T8goX4DMwGQJsuJwNkAAAAASUVORK5CYII="/>
+                        <input type="password" id="password" name="password" placeholder="Contraseña">
+                    </label>
+                    <input type="button" value="Iniciar Sesión" onclick='loguear()'>
+                </form>
+            </div>
+        </div>      
+    </div>
+    <script src="login (1).js"></script>
+</body>
+<footer class="footer-redes">
+    <p>&copy; 2024 Pizzería Italia. Todos los derechos reservados.</p>
+</footer>
+
+
+
+<script src="menu.js"></script>
+
+</html>

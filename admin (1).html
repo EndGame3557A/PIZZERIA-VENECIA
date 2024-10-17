@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria Venecia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/venecia-negro.jpg">
+</head>
+<header class="headernav">
+    <img class="VENECIA2" src="img/venecia-negro.jpg" alt="logo">
+    <a href="bienvenido.html" class="logoj">Pizzeria Venecia</a>
+    <!-- El botón del menú hamburguesa -->
+<button id="abrir" class="abrir-menu hamburger">
+<span></span>
+<span></span>
+<span></span>
+</button>
+
+<!-- El menú hamburguesa -->
+<nav class="nav" id="nav">
+<button class="cerrar-menu" id="cerrar">.</button>
+<ul class="nav-list">
+<li><a href="quienes_somos.html">Quienes somos</a></li>
+<li><a href="productos.html">Productos</a></li>
+<li><a href="redes-sociales.html">Contactanos</a></li>
+<li><a href="login.html">Iniciar Sesión</a></li>
+</ul>
+</nav>
+</header>
+<body class="body-admin">
+    <div class="editar">
+        <div class="edi1" onclick="location.href='editar_usuarios.php'">USUARIOS</div>
+        <div class="edi2" onclick="location.href='editar_productos.php'">PRODUCTOS</div>
+        <div class="edi3" onclick="location.href='editar_proveedor.php'">PROVEEDORES</div>
+    </div>
+
+</body>
+<footer class="footer-redes">
+    <p>&copy; 2024 Pizzería Venecia. Todos los derechos reservados.</p>
+</footer>
+
+
+
+
+<script src="menu.js"></script>
+
+</html>

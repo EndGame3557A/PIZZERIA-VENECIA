@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria Venecia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<bodyr class="cuerpo-social">
+    <!-- Sección Redes Sociales -->
+
+        <header class="headernav">
+            <img class="VENECIA2" src="img/venecia-negro.jpg" alt="logo">
+            <a href="bienvenido.html" class="logoj">Pizzeria Venecia</a>
+            <!-- El botón del menú hamburguesa -->
+<button id="abrir" class="abrir-menu hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  
+  <!-- El menú hamburguesa -->
+  <nav class="nav" id="nav">
+    <button class="cerrar-menu" id="cerrar">.</button>
+    <ul class="nav-list">
+      <li><a href="quienes_somos.html">Quienes somos</a></li>
+      <li><a href="productos.html">Productos</a></li>
+      <li><a href="redes-sociales.html">Contactanos</a></li>
+      <li><a href="login.html">Iniciar Sesión</a></li>
+    </ul>
+  </nav>
+        </header>
+
+    <div class="informacion-redes" id="redes-sociales">
+        <h1 class="redes-titulo">Encuéntranos en</h1>
+        <div class="icons-redes">
+            <a target="_blank" href="https://www.facebook.com/share/4mXgivGeKbeWNDjZ/?mibextid=qi2Omg"><i class="bi bi-facebook"></i></a>
+            <a target="_blank" href="https://www.instagram.com/pizzeriavenecia_tulua?igsh=enF1NmlwbDd1YmYy"><i class="bi bi-instagram"></i></a>
+            <a target="_blank" href="https://www.tiktok.com/@pizzeria.venecia.tulua?_t=8oSnzFyfDQj&_r=1"><i class="bi bi-tiktok"></i></a>
+            <a target="_blank" href="https://wa.link/9x511m"><i class="bi bi-whatsapp"></i></a>
+        </div>
+        
+        <div class="contact">
+
+            <form class="container-formulario" method="post" action="https://formsubmit.co/jnandroask9@gmail.com">
+                <!--  action="enviar.php"
+                ?_next=https://localhost/PAGINA%20WEB%20VENECIA/gracias.html"  -->
+
+                <h2 class="titulo-formulario">Contáctenos</h2>
+
+                <div class="input-group-contact">
+
+
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://localhost/PAGINA%20WEB%20VENECIA/productos.html">
+
+
+
+
+                    <label class="label-form" for="name">Nombre</label>
+                    <input class="input-form" required type="text" name="name"  placeholder="Nombre">
+
+                    <label class="label-form" for="phone">Teléfono</label>
+                    <input class="input-form" required type="tel" name="phone"  placeholder="Teléfono">
+
+                    <label class="label-form" for="email">Email</label>
+                    <input class="input-form" required type="email" name="email"  placeholder="Correo electrónico">
+
+                    <label class="label-form" for="message">Mensaje</label>
+                    <textarea class="textarea-redes" name="message"  cols="30" rows="5" placeholder="|"></textarea>
+
+                    <input class="btn-redes" type="submit" value="Enviar">
+
+                    <div id="confirmation-message" style="display:none;">
+                        <h3>Mensaje Enviado</h3>
+                        <p>Gracias por contactarnos. Tu mensaje ha sido recibido.</p>
+                    </div>
+                    
+                
+
+<script>
+            
+                    document.getElementById('contact-form').addEventListener('submit', function(e) {
+                        e.preventDefault();
+                    
+                        var form = this;
+                        var formData = new FormData(form);
+                    
+                        fetch(form.action, {
+                            method: form.method,
+                            body: formData,
+                            headers: {
+                                'Accept': 'application/json'
+                            }
+                        }).then(response => {
+                            if (response.ok) {
+                                // Mostrar mensaje de éxito
+                                document.getElementById('confirmation-message').style.display = 'block';
+                                form.reset();
+                            } else {
+                                throw new Error('Error en el envío del formulario');
+                            }
+                        }).catch(error => {
+                            console.error('Error:', error);
+                            alert('Hubo un error al enviar el mensaje. Por favor, intenta de nuevo.');
+                        });
+                    });
+
+                </script>
+
+
+
+
+
+                    <!-- <script>
+                        const formulario = document.getElementById('formulario');
+                    
+                        formulario.addEventListener('submit', (e) => {
+                            e.preventDefault();
+                            const formData = new FormData(formulario);
+                            const url = 'https://formsubmit.co/jnandroask9@gmail.com';
+                            fetch(url, {
+                                method: 'POST',
+                                body: formData,
+                            })
+                            .then((response) => response.json())
+                            .then((data) => console.log(data))
+                            .catch((error) => console.error(error));
+                        });
+                    </script> -->
+
+                </div>
+
+            </form>
+           
+
+        </div>
+    </div>
+
+
+
+ <!-- Mapa de Google Maps -->
+ 
+
+
+
+    <footer class="footer-redes">
+        <p>&copy; 2024 Pizzería Venecia. Todos los derechos reservados.</p>
+    </footer>
+<!-- </bodyr> -->
+<!-- <body class="bodyh"> -->
+    <div class="mapa-pizzeria">
+        <h2 class="titulo-mapa">Nuestra Ubicación</h2>
+        <iframe
+             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.641210735181!2d-76.21270472582748!3d4.093225346625906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e39c5739529335d%3A0x6984ab6c89530459!2sPizzeria%20Venecia%20Tulu%C3%A1!5e0!3m2!1ses!2sco!4v1728310862092!5m2!1ses!2sco" width="400" height="300" style="border:0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </iframe>
+    </div>
+    
+    <!-- Horarios de Apertura -->
+    <div class="horarios-apertura">
+        <h2 class="titulo-horarios">Horarios de Atención</h2>
+        <table class="tabla-horarios">
+            <tr>
+                <th>Día</th>
+                <th>Horario</th>
+            </tr>
+            <tr>
+                <td>Lunes</td>
+                <td>5:00 PM - 10:00 PM</td>
+            </tr>
+            <tr>
+                <td>Martes</td>
+                <td>5:00 PM - 10:00 PM</td>
+            </tr>
+            <tr>
+                <td>Miércoles</td>
+                <td>CERRADO</td>
+            </tr>
+            <tr>
+                <td>Jueves</td>
+                <td>5:00 PM - 10:00 PM</td>
+            </tr>
+            <tr>
+                <td>Viernes</td>
+                <td>5:00 PM - 10:00 PM</td>
+            </tr>
+            <tr>
+                <td>Sábado</td>
+                <td>4:00 PM - 11:00 PM</td>
+            </tr>
+            <tr>
+                <td>Domingo</td>
+                <td>5:00 PM - 11:00 PM</td>
+            </tr>
+        </table>
+    </div>
+    </div>
+</body>
+
+
+
+
+<script src="menu.js"></script>
+<script src="index.js"></script>
+
+</html>

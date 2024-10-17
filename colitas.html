@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Tienda</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link rel="icon" href="img/venecia-negro.jpg">
+	</head>
+	<body class="body-product">
+		<header class="header2">
+			<div class="regresar">
+				<a href="productos.html"><img src="img/REGRESAR.png" alt="REGRESAR"></a>
+			</div>
+		</header>
+		<header class="header1">
+			<div class="container-icon">
+				<div class="container-cart-icon">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="icon-cart"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+						/>
+					</svg>
+					<div class="count-products">
+						<span id="contador-productos">0</span>
+					</div>
+				</div>
+
+				<div class="container-cart-products hidden-cart">
+					<div class="row-product hidden">
+						<div class="cart-product">
+							<div class="info-cart-product">
+								<span class="cantidad-producto-carrito">1</span>
+								<p class="titulo-producto-carrito">Colitas Cubanas</p>
+								<span class="precio-producto-carrito">$80</span>
+							</div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="icon-close"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6 18L18 6M6 6l12 12"
+								/>
+							</svg>
+						</div>
+					</div>
+
+					<div class="cart-total hidden">
+						<h3>Total:</h3>
+						<span class="total-pagar">$200</span>
+					</div>
+					<p class="cart-empty">El carrito está vacío</p>
+					<center><input type="button" value="Comprar Ahora" class="boton"></center>
+				</div>
+			</div>
+		</header>
+		<h1 class="titulo-producto">COLITAS CUBANAS</h1><br>
+
+		<div class="container-items">
+			<div class="item">
+				<figure>
+					<img class="img-productos"
+						src="https://img.freepik.com/foto-gratis/sandwich-cubano-tradicional-queso-jamon-carne-cerdo-frita-servido-sobre-tabla-madera_125999-50.jpg?size=626&ext=jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>JAMÓN Y QUESO</h2>
+					<p class="price">$5500</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img class="img-productos"
+						src="https://th.bing.com/th/id/R.35902efcd6a4bf467be21517e5cfcb3e?rik=ett%2bqjuvSPUCuA&riu=http%3a%2f%2fcolitascubanas.weebly.com%2fuploads%2f6%2f9%2f5%2f0%2f6950612%2f3789605.jpg&ehk=z%2fvIYD7U6biv7bVfmtZOEwRPBTLO9aKrs2XlQed1bJQ%3d&risl=&pid=ImgRaw&r=0"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>HAWAIANA</h2>
+					<p class="price">$6500</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img class="img-productos"
+						src="https://www.gastrolabweb.com/u/fotografias/m/2021/2/4/f1280x720-8146_139821_5050.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>SALAMI</h2>
+					<p class="price">$7500</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img class="img-productos"
+						src="https://chefirvine.com/wp-content/uploads/2017/12/Cuban-e1513892637715-1200x800.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>CORDERO</h2>
+					<p class="price">$7500</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img class="img-productos"
+						src="https://www.garlicandzest.com/wp-content/uploads/2018/04/panini-6-400x400.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>RANCHERA</h2>
+					<p class="price">$8500</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img class="img-productos"
+						src="https://i.pinimg.com/originals/4d/60/0a/4d600a68b4c0ad5a5984c744248494fd.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>POLLO</h2>
+					<p class="price">$10000</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img class="img-productos"
+						src="https://d3hbe0kmbam4a5.cloudfront.net/photos/0f825c3e-554d-42f6-b552-f836544e5cd3.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>ESPECIAL</h2>
+					<p class="price">$12500</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img class="img-productos"
+						src="https://s3-media0.fl.yelpcdn.com/bphoto/4AvB0skLdBu3zTPSFwSQXQ/300s.jpg"
+						alt="producto"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>VENECIA</h2>
+					<p class="price">$11500</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+		</div>
+
+		<script src="index.js"></script>
+	</body>
+	<footer class="footer-redes">
+		<p>&copy; 2024 Pizzería Venecia. Todos los derechos reservados.</p>
+	</footer>
+</html>
