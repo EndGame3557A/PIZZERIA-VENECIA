@@ -451,8 +451,13 @@
     justify-content: center;
 }
 
+.maps{
+    border-radius: 10%;
+}
+
+
 .horarios-apertura {
-    margin: 40px;
+    margin: 100px;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -944,9 +949,9 @@ td{
    background: linear-gradient(to right, green, white, red);
    min-height: 100vh;
    display: flex;
-   flex-direction: column;
+   flex-direction: row;
    align-items: center;
-justify-content: center;
+   justify-content: center;
 }
 
 .body-qs{
@@ -1566,7 +1571,22 @@ justify-content: center;
       margin-bottom: 20px;
     }
   }
-
+  @media screen and (max-width: 300px) {
+    .bienvenidoschachos{
+        margin: 0;
+        padding: 0;
+    }
+    .imagendellogo{
+        width: 200px;
+    }
+    .saludodehola{
+        font-size: 20px;
+        padding-top: 80px;
+    }
+    .nav, .nav-list{
+        height: 40px;
+    }
+  }
   
   @media screen and (max-width: 768px) {
     .container-items {
@@ -1607,3 +1627,4 @@ justify-content: center;
         margin-top: 80px;
       }
   }
+  
