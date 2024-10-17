@@ -1584,7 +1584,7 @@ td{
         padding-top: 80px;
     }
     .nav, .nav-list{
-        height: 40px;
+        width: 40px;
     }
   }
   
