@@ -875,7 +875,7 @@ body {
 }
 
 .card {
-    background-image: url(img/fondo2.png) ;
+    background-image: url(fondo2.png) ;
     opacity: 1;
     border: 2px solid black;
     color:white;
@@ -1100,7 +1100,7 @@ justify-content: center;
     margin: 20px;
     padding: 100px;
     width: calc(33.33% - 0px);
-    background-image: url("img/venecia-negro.jpg");
+    background-image: url("venecia-negro.jpg");
     cursor: pointer;
     color: rgb(255, 255, 255);
     border-radius: 40px;
