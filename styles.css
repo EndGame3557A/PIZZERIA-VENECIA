@@ -1571,20 +1571,53 @@ td{
       margin-bottom: 20px;
     }
   }
+  
   @media screen and (max-width: 300px) {
-    .bienvenidoschachos{
-        margin: 0;
-        padding: 0;
+    /* Ajustes generales */
+    
+  
+    /* Header */
+    .headernav {
+      padding: 5px;
     }
-    .imagendellogo{
-        width: 200px;
+  
+    .VENECIA2 {
+      width: 30px; /* Reduce el tamaño del logo */
     }
-    .saludodehola{
-        font-size: 20px;
-        padding-top: 80px;
+  
+    .logoj {
+      font-size: 14px;
     }
-    .nav, .nav-list{
-        width: 40px;
+  
+    /* Botón hamburguesa */
+    .hamburger {
+      transform: scale(0.7); /* Reduce el tamaño del botón */
+    }
+  
+    /* Menú de navegación */
+    .nav-list {
+      padding: 5px;
+    }
+  
+    .nav-list li {
+      margin-bottom: 5px;
+    }
+  
+    /* Contenido principal */
+    .saludodehola {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+  
+    .imagendellogo {
+      width: 80%; /* Ajusta el ancho de la imagen */
+      max-width: 150px;
+    }
+  
+    /* Footer */
+    .footer-redes {
+      padding: 5px;
+      font-size: 10px;
     }
   }
   
