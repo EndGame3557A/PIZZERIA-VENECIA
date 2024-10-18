@@ -1,70 +1,37 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Programando Ando</title>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">
-
-  <!-- Optional theme -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> -->
-
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Productos</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
-
-
-
-    <body class="body-edi">
-
-
-<div class="row">
-  <div class="col-md-4"></div>
-
-<!-- INICIA LA COLUMNA -->
-
-
-  <div class="col-md-4">
-
-  <header class="header2edi">
-			<div class="regresar-edi">
-				<a href="admin (1).html"><img src="REGRESAR.png" alt="REGRESAR"></a>
-			</div>
-		</header>
-
-    <center><h1>PROVEEDORES</h1></center>
-
-    <form method="POST" action="editar_proveedor.php" >
-
-    <div class="form-group">
-      <label for="nombre">Nombre</label>
-      <input type="text" name="nombre" class="form-control" id="nombre">
+<body>
+    <div class="formulario">
+        <h1>Proveedores</h1>
+        <form method="post" class="formedi">
+            <div class="div">
+                <input type="text" name="nombre"  id="nombre" placeholder="NOMBRE">
+            </div>
+            <div class="div">
+                <input type="text" name="prod" id="prod" placeholder="PRODUCTO">
+            </div>
+            <div class="div">
+                <input type="text" name="tel"  id="tel" placeholder="TELÉFONO">
+            </div>
+            <div class="div">
+                <input type="text" name="emp"  id="emp" placeholder="EMPRESA">
+            </div>
+            <div botones>
+                <input class="registrar" type="submit" value="Registrar" name="registrar">
+                <input class="consultar" type="submit" value="Consultar" name="consultar">
+                <input class="actualizar" type="submit" value="Actualizar"name="actualizar">
+                <input class="botoness" type="submit" value="Eliminar"  name="eliminar">
+            </div>
+        </form>
     </div>
-
-    <div class="form-group">
-        <label for="prod">Producto</label>
-        <input type="text" name="prod" class="form-control" id="prod" >
-    </div>
-
-    <div class="form-group">
-        <label for="tel">Teléfono </label>
-        <input type="text" name="tel" class="form-control" id="tel">
-    </div>
-    <div class="form-group">
-        <label for="emp">Empresa</label>
-        <input type="text" name="emp" class="form-control" id="emp">
-    </div>
-
-    
-    <center>
-      <input type="submit" value="Registrar" class="btn btn-success" name="registrar">
-      <input type="submit" value="Consultar" class="btn btn-primary" name="consultar">
-      <input type="submit" value="Actualizar" class="btn btn-info" name="actualizar">
-      <input type="submit" value="Eliminar" class="btn btn-danger" name="eliminar">
-    </center>
-
-  </form>
-
+</body>
+</html>
   <?php
     include("conexion3.php");
       
@@ -92,6 +59,7 @@
             (nombre, producto, telefono, empresa) 
               values 
             ('$nombre','$prod', '$tel','$emp')");
+            echo("registro exitoso");
           }
       }
 

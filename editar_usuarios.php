@@ -1,73 +1,34 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Programando Ando</title>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">
-
-  <!-- Optional theme -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> -->
-
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Productos</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
-
-
-    <body class="body-edi">
-
-
-<div class="row">
-  <div class="col-md-4"></div>
-
-<!-- INICIA LA COLUMNA -->
-
-
-  <div class="col-md-4">
-
-
-  <section class="header2edi">
-			<div class="regresar-edi">
-				<a href="admin (1).html"><img src="REGRESAR.png" alt="REGRESAR"></a>
-			</div>
-		</section>
-
-
-
-
-
-  <section class="formedi">
-    <center><h1>USUARIOS</h1></center>
-
-    <form method="POST" action="editar_usuarios.php" >
-
-    <div class="form-group">
-      <label for="name">Nombre completo</label>
-      <input type="text" name="name" class="form-control" id="name">
+<body>
+    <div class="formulario">
+        <h1>Usuarios</h1>
+        <form method="post" class="formedi">
+            <div class="div">
+                <input type="div" name="name"  id="name" placeholder="NOMBRE">
+            </div>
+            <div class="div">
+                <input type="text" name="user" id="user" placeholder="USUARIO">
+            </div>
+            <div class="div">
+                <input type="text" name="pass"  id="pass" placeholder="CONTRASEÑA">
+            </div>
+            <div class="botones">
+                <input class="registrar" type="submit" value="Registrar" name="registrar">
+                <input class="consultar" type="submit" value="Consultar" name="consultar">
+                <input class="actualizar" type="submit" value="Actualizar"name="actualizar">
+                <input class="botoness" type="submit" value="Eliminar"  name="eliminar">
+            </div>
+        </form>
     </div>
-
-    <div class="form-group">
-        <label for="user">Usuario</label>
-        <input type="text" name="user" class="form-control" id="user" >
-    </div>
-
-    <div class="form-group">
-        <label for="pass">Contraseña</label>
-        <input type="text" name="pass" class="form-control" id="pass">
-    </div>
-
-    
-    <center>
-      <input type="submit" value="Registrar" class="btn btn-success" name="btn_registrar">
-      <input type="submit" value="Consultar" class="btn btn-primary" name="btn_consultar">
-      <input type="submit" value="Actualizar" class="btn btn-info" name="btn_actualizar">
-      <input type="submit" value="Eliminar" class="btn btn-danger" name="btn_eliminar">
-    </center>
-
-  </form><br><br>
-
-  </section>
-
+</body>
+</html>
   
 
   <?php
@@ -77,7 +38,7 @@
       $user ="";
       $pass    ="";
 
-      if(isset($_POST['btn_registrar']))
+      if(isset($_POST['registrar']))
       {      
         $name    = $_POST['name'];
         $user = $_POST['user'];
@@ -94,10 +55,11 @@
             (nombre_completo, usuario, contraseña) 
               values 
             ('$name','$user', '$pass')");
+            echo("Se registro éxitosamente");
           }
       }
 
-      if(isset($_POST['btn_consultar']))
+      if(isset($_POST['consultar']))
       {
         $user    = $_POST['user'];
         $pass    = $_POST['pass'];
@@ -129,7 +91,7 @@
 
       }
 
-      if(isset($_POST['btn_actualizar']))
+      if(isset($_POST['actualizar']))
       {
         $name    = $_POST['name'];
         $user = $_POST['user'];
@@ -173,7 +135,7 @@
           }
       }
 
-      if(isset($_POST['btn_eliminar']))
+      if(isset($_POST['eliminar']))
       {
         $user    = $_POST['user'];
         $pass    = $_POST['pass'];
