@@ -1584,6 +1584,11 @@ td{
     .VENECIA2 {
       width: 30px; /* Reduce el tamaño del logo */
     }
+    .editar {
+        flex-direction: column;
+        justify-content: center;
+        height: 80px;
+    }
   
     .logoj {
       font-size: 14px;
@@ -1626,6 +1631,10 @@ td{
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+    .editar {
+        flex-direction: column;
+        justify-content: center;
     }
   
     .item {
