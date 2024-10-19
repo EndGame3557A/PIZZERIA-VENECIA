@@ -783,7 +783,8 @@ body {
     font-family: "Edu AU VIC WA NT Hand", cursive;
 }
 .bienvenidoschachos{
-    background: linear-gradient(to right, green, white, red)
+    background: linear-gradient(to right, green, white, red);
+    background-size: cover;
 }
 .saludodehola{
     font-size: 90px;
@@ -1467,6 +1468,21 @@ td{
         margin-top: 80px;
     }
 
+    .saludodehola {
+        font-size: 100px;
+        margin: 10px 0;
+      }
+    
+      .imagendellogo {
+        /* width: 80%; */
+        max-width: 150px;
+        font-size: 100px;
+      }
+
+      .bienvenidoschachos{
+        background-size: auto 100%;
+      }
+
 
     
 }
@@ -1486,6 +1502,10 @@ td{
       width: 100%;
       margin: 10px 0;
     }
+
+    .bienvenidoschachos{
+        height: 100%;
+      }
   
     .card-container > div {
       width: 100%;
@@ -1521,6 +1541,18 @@ td{
       margin: 10px 0;
       padding: 10px;
     }
+    .bienvenidoschachos{
+        height: 100%;
+      }
+    .saludodehola {
+        font-size: 100px;
+        margin: 10px 0;
+      }
+    
+      .imagendellogo {
+        width: 80%; /* Ajusta el ancho de la imagen */
+        max-width: 300px;
+      }
   
     .container2 > div {
       width: 100%;
@@ -1551,11 +1583,22 @@ td{
         margin: 0;
         padding: 0;
     }
-  
+    .bienvenidoschachos{
+        height: 100%;
+      }
     .titulo{
         font-size: 22px;
         margin: 0;
     }
+    .saludodehola {
+        font-size: 18px;
+        margin: 10px 0;
+      }
+    
+      .imagendellogo {
+        width: 80%; /* Ajusta el ancho de la imagen */
+        max-width: 150px;
+      }
 
     .mision .titulo, .vision .titulo {
       font-size: 20px;
@@ -1583,10 +1626,21 @@ td{
         margin: 0;
         padding: 0;
     }
-
+    .bienvenidoschachos{
+        height: 100%;
+      }
     .mision, .vision {
       margin-bottom: 20px;
     }
+    .saludodehola {
+        font-size: 18px;
+        margin: 10px 0;
+      }
+    
+      .imagendellogo {
+        width: 80%; /* Ajusta el ancho de la imagen */
+        max-width: 150px;
+      }
   }
   
   @media screen and (max-width: 300px) {
@@ -1599,7 +1653,9 @@ td{
         margin: 0;
         padding: 0;
     }
-  
+    .bienvenidoschachos{
+        height: 100%;
+      }
     /* Header */
     .headernav {
       padding: 5px;
@@ -1657,6 +1713,17 @@ td{
       flex-direction: column;
       align-items: center;
     }
+    .saludodehola {
+        font-size: 18px;
+        margin: 10px 0;
+      }
+      .bienvenidoschachos{
+        height: 100%;
+      }
+      .imagendellogo {
+        width: 80%; /* Ajusta el ancho de la imagen */
+        max-width: 150px;
+      }
     .editar {
         flex-direction: column;
         justify-content: center;
