@@ -1410,6 +1410,7 @@ td{
 
     .saludodehola{
         font-size: 60px;
+        padding-top:80px;
     }
     
   }
@@ -1470,8 +1471,7 @@ td{
 
     .saludodehola {
         font-size: 100px;
-        margin: 10px 0;
-      }
+        padding-top:80px;      }
     
       .imagendellogo {
         /* width: 80%; */
@@ -1481,6 +1481,7 @@ td{
 
       .bienvenidoschachos{
         background-size: auto 100%;
+        margin-top:80px;
       }
 
 
@@ -1505,6 +1506,8 @@ td{
 
     .bienvenidoschachos{
         height: 100%;
+        margin-top:80px;
+
       }
   
     .card-container > div {
@@ -1543,11 +1546,12 @@ td{
     }
     .bienvenidoschachos{
         height: 100%;
+        margin-top:80px;
+
       }
     .saludodehola {
         font-size: 100px;
-        margin: 10px 0;
-      }
+        padding-top:80px;      }
     
       .imagendellogo {
         width: 80%; /* Ajusta el ancho de la imagen */
@@ -1585,6 +1589,8 @@ td{
     }
     .bienvenidoschachos{
         height: 100%;
+        margin-top:80px;
+
       }
     .titulo{
         font-size: 22px;
@@ -1592,8 +1598,7 @@ td{
     }
     .saludodehola {
         font-size: 18px;
-        margin: 10px 0;
-      }
+        padding-top:80px;      }
     
       .imagendellogo {
         width: 80%; /* Ajusta el ancho de la imagen */
@@ -1628,14 +1633,15 @@ td{
     }
     .bienvenidoschachos{
         height: 100%;
+        margin-top:80px;
+
       }
     .mision, .vision {
       margin-bottom: 20px;
     }
     .saludodehola {
         font-size: 18px;
-        margin: 10px 0;
-      }
+        padding-top:80px;      }
     
       .imagendellogo {
         width: 80%; /* Ajusta el ancho de la imagen */
@@ -1655,6 +1661,8 @@ td{
     }
     .bienvenidoschachos{
         height: 100%;
+        margin-top:80px;
+
       }
     /* Header */
     .headernav {
@@ -1692,8 +1700,7 @@ td{
     /* Contenido principal */
     .saludodehola {
       font-size: 18px;
-      margin: 10px 0;
-    }
+      padding-top:80px;    }
   
     .imagendellogo {
       width: 80%; /* Ajusta el ancho de la imagen */
@@ -1715,14 +1722,16 @@ td{
     }
     .saludodehola {
         font-size: 18px;
-        margin: 10px 0;
+        padding-top:80px;
       }
       .bienvenidoschachos{
         height: 100%;
+        margin-top:80px;
+
       }
       .imagendellogo {
-        width: 80%; /* Ajusta el ancho de la imagen */
-        max-width: 150px;
+        /* height: 500px; */
+        width: 500px; /* Ajusta el ancho de la imagen */
       }
     .editar {
         flex-direction: column;
