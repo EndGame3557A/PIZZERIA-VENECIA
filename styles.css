@@ -1082,13 +1082,13 @@ td{
     display: flex;
     flex-direction:row;
     padding-top: 100px;
-    width: 1500px;
+    width: 1200px;
 }
 
 
 .edi1 {
     margin: 20px;
-    padding: 100px;
+    padding: 80px;
     width: calc(33.33% - 0px);
     background-image: url("https://th.bing.com/th/id/R.a39ad9dd6459e2ea46c5ce02e97d4c86?rik=WrUXiZMdVdHPWQ&pid=ImgRaw&r=0");
     cursor: pointer;
@@ -1096,7 +1096,7 @@ td{
     border-radius: 40px;
     box-shadow: 0 0 20px rgb(0, 0, 0);
     background-size: cover;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 999;
     text-shadow: 0 0 20px black;
     display: flex;
@@ -1104,7 +1104,7 @@ td{
 }
 .edi2 {
     margin: 20px;
-    padding: 100px;
+    padding: 80px;
     width: calc(33.33% - 0px);
     background-image: url("venecia-negro.jpg");
     cursor: pointer;
@@ -1112,15 +1112,15 @@ td{
     border-radius: 40px;
     box-shadow: 0 0 20px rgb(0, 0, 0);
     background-size: cover;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 999;
     text-shadow: 0 0 20px black;
 
 }
 .edi3 {
     margin: 20px;
-    padding: 70px;
-    padding-top: 95px;
+    padding: 60px;
+    padding-top: 80px;
     width: calc(33.33% - 0px);
     background-image: url("https://static.vecteezy.com/system/resources/previews/002/804/499/non_2x/distributor-flat-illustration-producer-service-provider-business-model-strategic-planning-distribution-of-products-and-services-delivery-truck-isolated-cartoon-character-on-white-vector.jpg");
     cursor: pointer;
@@ -1128,7 +1128,7 @@ td{
     border-radius: 40px;
     box-shadow: 0 0 20px rgb(0, 0, 0);
     background-size: cover;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 999;
     text-shadow: 0 0 20px black;
 
@@ -1856,12 +1856,19 @@ form .div{
 
 /* ------------------------- BOTONES ------------------ */
 
-.botones{
+/* .botones{
     
         display: flex;
         padding: 20%;
     
-}
+} */
+/* Estilos generales */
+
+
+/* Estilo del contenedor del formulario */
+
+
+
 .botoness{
     width: 50%;
     height: 30px;

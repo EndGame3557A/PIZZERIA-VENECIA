@@ -29,9 +29,35 @@
                 <input class="botoness" type="submit" value="Eliminar"  name="eliminar">
             </div>
         </form>
+        <a  href="http://localhost/phpmyadmin/index.php?route=/sql&pos=0&db=pizzeria_venecia&table=producto"><button class="db">BASE DE DATOS</button></a>  
+
     </div>
 </body>
 </html>
+
+<style>.db{
+    width: 50%;
+    height: 30px;
+    border: 1px solid;
+    background-color:rgb(116, 255, 250);
+    border-radius: 25px;
+    font-size: 18px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    outline: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 87px;
+    justify-content: center;
+    align-items: center;
+}
+.db:hover{
+    background-color: rgb(0, 255, 247);
+
+}</style>
+
+
+
   <?php
     include("conn.php");
       
